@@ -8,12 +8,6 @@ class Singleton {
   
       return Singleton.instance;
     }
-  
-    addData(item) {
-        //agrega una variable al singleton
-      this._data.push(item);
-    }
-  
     getData() {
         // retorna todos los datos dentro de la instancia 
       return this._data;
@@ -25,7 +19,7 @@ class Singleton {
   
     get(key) {
         // obtiene un objeto con la lalve asignada
-        
+
 
         try {
            return this._data[key]
